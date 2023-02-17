@@ -1,0 +1,57 @@
+@import "../../global.scss";
+
+.portfolio {
+  background-color: whitesmoke;
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;}
+.left{
+   flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  h1{
+    color: darkblue;
+    align-items: center;
+  justify-content: center;
+  }
+  h4{
+    flex-wrap: wrap;
+        font-size: 20px;
+        color: goldenrod;
+        width: 50%;
+        padding: 20px;
+  }
+  h5{
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: crimson;
+    padding: 0px 100px;
+  
+  }
+}
+.right{
+  flex: 0.5;
+  justify-content: center;
+  flex-direction: column;  
+
+
+  .imgContainer {
+    width: 500px;
+    height: 400px;
+    overflow:auto;
+    //border-radius: 50%;
+    display: flex;
+    //align-items: flex-end;
+    justify-content: center;
+    //float: right;
+    padding: 50px;
+
+    @include mobile {
+    
+    }}
+}
+}
